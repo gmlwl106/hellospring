@@ -8,6 +8,8 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 
 
 --spring 라이브러리 태그 (pom.xml packaging 밑에 작성)------------------------------------------------------------------
+제일 먼저 추가하는 거 -> 버전, contauber(core), Web, MVC
+
 <!-- Spring 버전 -->
 <properties>
 	<org.springframework-version>4.3.3.RELEASE</org.springframework-version>
@@ -37,6 +39,7 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 		<version>${org.springframework-version}</version>
 	</dependency>
 
+
 	<!-- Oracle JDBC -->
 	<dependency>
 		<groupId>com.oracle.database.jdbc</groupId>
@@ -44,13 +47,13 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 		<version>11.2.0.4</version>
 	</dependency>
 
-
 	<!-- spring jdbc -->
 	<dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-jdbc</artifactId>
 		<version>${org.springframework-version}</version>
 	</dependency>
+
 
 	<!-- MyBatis -->
 	<dependency>
@@ -72,7 +75,6 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
 	</dependency>
-
 
 </dependencies>
 <!-- //Spring 라이브러리// -->
@@ -109,6 +111,11 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 		<property name="suffix" value=".jsp" />
 		<property name="order" value="1" />
 	</bean>
+	
+	<!-- 서블릿 컨테이너의 디폴트 서블릿 위임 핸들러(css, img) -->
+	<mvc:default-servlet-handler />
+	<mvc:annotation-driven />
+	
 
 </beans>
 
