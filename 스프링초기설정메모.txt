@@ -232,6 +232,7 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
+		<typeAlias alias="PersonVo" type="com.javaex.vo.PersonVo" />
 	</typeAliases>
 	<mappers>
 		<mapper resource="mybatis/mappers/phonebook.xml" /> <!-- mapper 안에 만드는 파일 주소로 입력 -->
