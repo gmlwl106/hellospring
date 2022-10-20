@@ -95,6 +95,15 @@ Dynamic Web Project->"src\main\resources" 추가->Content directory "webapp"으�
 		<artifactId>commons-io</artifactId>
 		<version>2.4</version>
 	</dependency>
+	
+	<!-- POI 라이브러리 -->
+	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+	<!-- 오피스 파일을 자바 언어로 읽고 쓰는 기능을 사용하기 위한 라이브러리 -->
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi</artifactId>
+		<version>3.17</version>
+	</dependency>
 
 </dependencies>
 <!-- //Spring 라이브러리// -->
